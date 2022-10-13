@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS products (
     variant varchar NOT NULL,
     discount decimal NOT NULL,
     created_at timestamp NOT NULL,
-    updated_at timestamp NOT NULL,
+    updated_at timestamp NOT NULL
 );

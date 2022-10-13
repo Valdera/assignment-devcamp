@@ -32,6 +32,7 @@ func main() {
 
 	router := mux.NewRouter()
 
+	router.HandleFunc("/product", productHandler.AddProductHandler).Methods(http.MethodPost)
 	router.HandleFunc("/product/{id}", productHandler.UpdateProductHandler).Methods(http.MethodPatch)
 	router.HandleFunc("/product/{id}", productHandler.GetProductHandler).Methods(http.MethodGet)
 	router.HandleFunc("/product/{id}", productHandler.DeleteProductHandler).Methods(http.MethodDelete)
